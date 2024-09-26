@@ -33,5 +33,10 @@ public class Projeto_15 {
         FileWriter arquivo = new FileWriter("C:\\Users\\w.rocha\\Documents\\TxT" + nome_do_arquivo[i] + ".txt");
         PrintWriter gravar = new PrintWriter(nome_do_arquivo[i]);
         }
+        
+        for (int i = 0; i < 5; i++) {
+         gravar.printf("Tabuada do " + vetor[i] + "\n"); //escrevo no arquivo a tabuada de tal numero.
+         gravar.printf(vetor[i] + "x" + i + vetor[i] * i); //escrevo o numero vezes o indice até o 10 mostrando seu resultado.
+        }
     }
-}        
+} 
